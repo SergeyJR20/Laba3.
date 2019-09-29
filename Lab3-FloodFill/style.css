@@ -1,0 +1,101 @@
+header {
+	background-color: #2196F3;
+}
+
+.canvas_holder, .title_holder {
+    display: flex;
+}
+
+canvas {
+    width: 399px;
+    height: 492px;
+}
+
+.title_holder {
+    height: 48px;
+    color: #fafafa;
+    background-color: #2196F3;
+    z-index: 3;
+    position: relative;
+}
+
+.title_holder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.26);
+}
+
+.canvas_title {
+    width: 400px;
+    text-align: center;
+
+    padding: 16px;
+    font-size: 20px;
+    user-select: none;
+}
+
+.canvas_divider{
+    display: block;
+    width: 2px;
+    background: #2196F3;
+}
+
+.button_control {
+    color: #2196F3;
+}
+
+.button_control.active {
+    background: #2196F3;
+}
+
+
+.button_control.button_gradual, .button_control.button_gradual::before {
+    border-radius: 24px 0 0 24px;
+    padding-left: 56px;
+}
+
+.button_control.button_gradual::after {
+    top: 0;
+    left: 8px;
+    background: url('../shared/images/fill_gradual_blue.png');
+}
+
+.button_control.active.button_gradual::after {
+    background: url('../shared/images/fill_gradual.png');
+}
+
+.button_control.button_instant, .button_control.button_instant::before {
+    border-radius: 0 24px 24px 0;
+    padding-right: 56px;
+}
+
+.button_control.button_instant::after {
+    top: 0;
+    right: 8px;
+    background: url('../shared/images/fill_instant_blue.png');
+}
+
+
+.button_control.active.button_instant::after {
+    background: url('../shared/images/fill_instant.png');
+}
+
+.button_floating:active {
+    background: #2196F3;
+}
+
+.button_floating.back::after {
+    background: url('../shared/images/back_blue.png');
+}
+
+.button_floating.forward::after {
+    background: url('../shared/images/forward_blue.png');
+}
+
+.github-corner svg {
+    fill: #2196F3;
+}

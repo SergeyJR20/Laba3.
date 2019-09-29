@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Flood Fill Algorithms</title>
+        <link rel="shortcut icon" href="../shared/icons/blue.ico">
+        <link href="../shared/css/reset.css" rel="stylesheet" type="text/css">
+        <link href="../shared/css/floating_button.css" rel="stylesheet" type="text/css">
+        <link href="../shared/css/layout.css" rel="stylesheet" type="text/css">
+        <link href="../shared/css/github.css" rel="stylesheet" type="text/css">
+        <link href="./style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <main>
+            <div class="elevated">
+                <header>
+                    <a title="Back to previews" class="button_toolbar close" id="button_close" href=".."></a>
+                    <button title="Clear Canvas" class="button_toolbar clear" id="button_clear"></button>
+                    <div class="title">Flood Fill Algorithms</div>
+                </header>
+                <div class="canvas_holder">
+                    <canvas id="canvas_slow"></canvas>
+                    <div class="canvas_divider"></div>
+                    <canvas id="canvas_fast"></canvas>
+                </div>
+                <footer class="title_holder">
+                    <div class="canvas_title">Slower Algorithm</div>
+                    <div class="canvas_title">Faster Algorithm</div>
+                </footer>
+            </div>
+            <div class="buttons">
+                <button id="button_gradual" class="button_control button_gradual">Gradual Fill</button>
+                <button id="button_instant" class="button_control button_instant">Instant Fill</button>
+            </div>
+        </main>
+        <a class="button_floating back" href="../Lab2-Bresenham" title="Bresenham's Line Algorithm"></a>
+        <a class="button_floating forward" href="../Lab4-Cohen-Sutherland" title="Cohen-Sutherland's Outcode Algorithm"></a>
+        <script src="../shared/scripts/polyfills.js"></script>
+        <script src="../shared/lib/jquery.min.js"></script>
+        <script src="./classes/Renderer.js"></script>
+        <script src="./classes/AbstractFloodFillCanvas.js"></script>
+        <script src="./classes/FastFloodFillCanvas.js"></script>
+        <script src="./classes/SlowFloodFillCanvas.js"></script>
+        <script src="./classes/MultiCanvasInterface.js"></script>
+        <script src="../shared/scripts/shared.js"></script>
+        <script src="./script.js"></script>
+        <script src="../shared/scripts/transition.js"></script>
+    </body>
+</html>
